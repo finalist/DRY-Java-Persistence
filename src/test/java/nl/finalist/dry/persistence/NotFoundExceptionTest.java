@@ -1,12 +1,12 @@
 package nl.finalist.dry.persistence;
 
-import org.junit.Test;
+import nl.finalist.dry.junit.commons.ExtendingExceptionTest;
 
-public class NotFoundExceptionTest {
+public class NotFoundExceptionTest extends ExtendingExceptionTest<NotFoundException>{
 
-    @Test
-    public void test() {
-        // fail("Not yet implemented");
+    @Override
+    protected Class<NotFoundException> getExceptionClass() {
+        return NotFoundException.class;
     }
 
 }
